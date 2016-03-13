@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB185E931C92B99600BF8C95 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB185E921C92B99600BF8C95 /* CustomHeaderView.swift */; };
+		DB40F27C1C9159A100637689 /* NaviationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F27B1C9159A100637689 /* NaviationCategory.swift */; };
+		DB40F27F1C9159DD00637689 /* backGround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB40F27E1C9159DD00637689 /* backGround.jpg */; };
 		DB5DA7811C9053E300F2B59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DA7801C9053E300F2B59A /* AppDelegate.swift */; };
 		DB5DA7831C9053E300F2B59A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DA7821C9053E300F2B59A /* ViewController.swift */; };
 		DB5DA7861C9053E300F2B59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5DA7841C9053E300F2B59A /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB185E921C92B99600BF8C95 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		DB40F27B1C9159A100637689 /* NaviationCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviationCategory.swift; sourceTree = "<group>"; };
+		DB40F27E1C9159DD00637689 /* backGround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backGround.jpg; sourceTree = "<group>"; };
 		DB5DA77D1C9053E300F2B59A /* YSinaNavigationBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSinaNavigationBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5DA7801C9053E300F2B59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5DA7821C9053E300F2B59A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB185E8F1C92B96000BF8C95 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				DB185E921C92B99600BF8C95 /* CustomHeaderView.swift */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		DB40F27D1C9159DD00637689 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F27E1C9159DD00637689 /* backGround.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		DB5DA7741C9053E300F2B59A = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +119,9 @@
 		DB5DA77F1C9053E300F2B59A /* YSinaNavigationBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DB185E8F1C92B96000BF8C95 /* HeaderView */,
+				DB40F27D1C9159DD00637689 /* Image */,
+				DB5DA7B01C90622D00F2B59A /* NavigationCategory */,
 				DB5DA7801C9053E300F2B59A /* AppDelegate.swift */,
 				DB5DA7821C9053E300F2B59A /* ViewController.swift */,
 				DB5DA7841C9053E300F2B59A /* Main.storyboard */,
@@ -123,6 +148,14 @@
 				DB5DA7A21C9053E300F2B59A /* Info.plist */,
 			);
 			path = YSinaNavigationBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		DB5DA7B01C90622D00F2B59A /* NavigationCategory */ = {
+			isa = PBXGroup;
+			children = (
+				DB40F27B1C9159A100637689 /* NaviationCategory.swift */,
+			);
+			path = NavigationCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +226,7 @@
 				TargetAttributes = {
 					DB5DA77C1C9053E300F2B59A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8S4NWFZC5J;
 					};
 					DB5DA7901C9053E300F2B59A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -230,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5DA78B1C9053E300F2B59A /* LaunchScreen.storyboard in Resources */,
+				DB40F27F1C9159DD00637689 /* backGround.jpg in Resources */,
 				DB5DA7881C9053E300F2B59A /* Assets.xcassets in Resources */,
 				DB5DA7861C9053E300F2B59A /* Main.storyboard in Resources */,
 			);
@@ -256,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB185E931C92B99600BF8C95 /* CustomHeaderView.swift in Sources */,
 				DB5DA7831C9053E300F2B59A /* ViewController.swift in Sources */,
+				DB40F27C1C9159A100637689 /* NaviationCategory.swift in Sources */,
 				DB5DA7811C9053E300F2B59A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YSinaNavigationBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemo;
@@ -408,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = YSinaNavigationBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemo;
@@ -482,6 +521,7 @@
 				DB5DA7A71C9053E300F2B59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB5DA7A81C9053E300F2B59A /* Build configuration list for PBXNativeTarget "YSinaNavigationBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +530,7 @@
 				DB5DA7AA1C9053E300F2B59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB5DA7AB1C9053E300F2B59A /* Build configuration list for PBXNativeTarget "YSinaNavigationBarDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +539,7 @@
 				DB5DA7AD1C9053E300F2B59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
