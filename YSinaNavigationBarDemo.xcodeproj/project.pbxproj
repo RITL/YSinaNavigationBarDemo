@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB185E931C92B99600BF8C95 /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB185E921C92B99600BF8C95 /* CustomHeaderView.swift */; };
+		DB1F59CA1C95116800C66C01 /* Sina.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB1F59C91C95116800C66C01 /* Sina.gif */; };
 		DB40F27C1C9159A100637689 /* NaviationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40F27B1C9159A100637689 /* NaviationCategory.swift */; };
 		DB40F27F1C9159DD00637689 /* backGround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB40F27E1C9159DD00637689 /* backGround.jpg */; };
 		DB5DA7811C9053E300F2B59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DA7801C9053E300F2B59A /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		DB185E921C92B99600BF8C95 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		DB1F59C91C95116800C66C01 /* Sina.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sina.gif; sourceTree = "<group>"; };
 		DB40F27B1C9159A100637689 /* NaviationCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NaviationCategory.swift; sourceTree = "<group>"; };
 		DB40F27E1C9159DD00637689 /* backGround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backGround.jpg; sourceTree = "<group>"; };
 		DB5DA77D1C9053E300F2B59A /* YSinaNavigationBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSinaNavigationBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 		DB40F27D1C9159DD00637689 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				DB1F59C91C95116800C66C01 /* Sina.gif */,
 				DB40F27E1C9159DD00637689 /* backGround.jpg */,
 			);
 			path = Image;
@@ -266,6 +269,7 @@
 				DB5DA78B1C9053E300F2B59A /* LaunchScreen.storyboard in Resources */,
 				DB40F27F1C9159DD00637689 /* backGround.jpg in Resources */,
 				DB5DA7881C9053E300F2B59A /* Assets.xcassets in Resources */,
+				DB1F59CA1C95116800C66C01 /* Sina.gif in Resources */,
 				DB5DA7861C9053E300F2B59A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
