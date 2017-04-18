@@ -16,26 +16,7 @@
 		DB5DA7861C9053E300F2B59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5DA7841C9053E300F2B59A /* Main.storyboard */; };
 		DB5DA7881C9053E300F2B59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5DA7871C9053E300F2B59A /* Assets.xcassets */; };
 		DB5DA78B1C9053E300F2B59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5DA7891C9053E300F2B59A /* LaunchScreen.storyboard */; };
-		DB5DA7961C9053E300F2B59A /* YSinaNavigationBarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DA7951C9053E300F2B59A /* YSinaNavigationBarDemoTests.swift */; };
-		DB5DA7A11C9053E300F2B59A /* YSinaNavigationBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DA7A01C9053E300F2B59A /* YSinaNavigationBarDemoUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DB5DA7921C9053E300F2B59A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB5DA7751C9053E300F2B59A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB5DA77C1C9053E300F2B59A;
-			remoteInfo = YSinaNavigationBarDemo;
-		};
-		DB5DA79D1C9053E300F2B59A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB5DA7751C9053E300F2B59A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DB5DA77C1C9053E300F2B59A;
-			remoteInfo = YSinaNavigationBarDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DB185E921C92B99600BF8C95 /* CustomHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
@@ -49,30 +30,10 @@
 		DB5DA7871C9053E300F2B59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5DA78A1C9053E300F2B59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5DA78C1C9053E300F2B59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB5DA7911C9053E300F2B59A /* YSinaNavigationBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSinaNavigationBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB5DA7951C9053E300F2B59A /* YSinaNavigationBarDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSinaNavigationBarDemoTests.swift; sourceTree = "<group>"; };
-		DB5DA7971C9053E300F2B59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB5DA79C1C9053E300F2B59A /* YSinaNavigationBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSinaNavigationBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB5DA7A01C9053E300F2B59A /* YSinaNavigationBarDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSinaNavigationBarDemoUITests.swift; sourceTree = "<group>"; };
-		DB5DA7A21C9053E300F2B59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DB5DA77A1C9053E300F2B59A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB5DA78E1C9053E300F2B59A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB5DA7991C9053E300F2B59A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,8 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				DB5DA77F1C9053E300F2B59A /* YSinaNavigationBarDemo */,
-				DB5DA7941C9053E300F2B59A /* YSinaNavigationBarDemoTests */,
-				DB5DA79F1C9053E300F2B59A /* YSinaNavigationBarDemoUITests */,
 				DB5DA77E1C9053E300F2B59A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				DB5DA77D1C9053E300F2B59A /* YSinaNavigationBarDemo.app */,
-				DB5DA7911C9053E300F2B59A /* YSinaNavigationBarDemoTests.xctest */,
-				DB5DA79C1C9053E300F2B59A /* YSinaNavigationBarDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,24 +90,6 @@
 				DB5DA78C1C9053E300F2B59A /* Info.plist */,
 			);
 			path = YSinaNavigationBarDemo;
-			sourceTree = "<group>";
-		};
-		DB5DA7941C9053E300F2B59A /* YSinaNavigationBarDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				DB5DA7951C9053E300F2B59A /* YSinaNavigationBarDemoTests.swift */,
-				DB5DA7971C9053E300F2B59A /* Info.plist */,
-			);
-			path = YSinaNavigationBarDemoTests;
-			sourceTree = "<group>";
-		};
-		DB5DA79F1C9053E300F2B59A /* YSinaNavigationBarDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DB5DA7A01C9053E300F2B59A /* YSinaNavigationBarDemoUITests.swift */,
-				DB5DA7A21C9053E300F2B59A /* Info.plist */,
-			);
-			path = YSinaNavigationBarDemoUITests;
 			sourceTree = "<group>";
 		};
 		DB5DA7B01C90622D00F2B59A /* NavigationCategory */ = {
@@ -181,42 +120,6 @@
 			productReference = DB5DA77D1C9053E300F2B59A /* YSinaNavigationBarDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DB5DA7901C9053E300F2B59A /* YSinaNavigationBarDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB5DA7A81C9053E300F2B59A /* Build configuration list for PBXNativeTarget "YSinaNavigationBarDemoTests" */;
-			buildPhases = (
-				DB5DA78D1C9053E300F2B59A /* Sources */,
-				DB5DA78E1C9053E300F2B59A /* Frameworks */,
-				DB5DA78F1C9053E300F2B59A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB5DA7931C9053E300F2B59A /* PBXTargetDependency */,
-			);
-			name = YSinaNavigationBarDemoTests;
-			productName = YSinaNavigationBarDemoTests;
-			productReference = DB5DA7911C9053E300F2B59A /* YSinaNavigationBarDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DB5DA79B1C9053E300F2B59A /* YSinaNavigationBarDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB5DA7AB1C9053E300F2B59A /* Build configuration list for PBXNativeTarget "YSinaNavigationBarDemoUITests" */;
-			buildPhases = (
-				DB5DA7981C9053E300F2B59A /* Sources */,
-				DB5DA7991C9053E300F2B59A /* Frameworks */,
-				DB5DA79A1C9053E300F2B59A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB5DA79E1C9053E300F2B59A /* PBXTargetDependency */,
-			);
-			name = YSinaNavigationBarDemoUITests;
-			productName = YSinaNavigationBarDemoUITests;
-			productReference = DB5DA79C1C9053E300F2B59A /* YSinaNavigationBarDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,14 +133,7 @@
 					DB5DA77C1C9053E300F2B59A = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 8S4NWFZC5J;
-					};
-					DB5DA7901C9053E300F2B59A = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = DB5DA77C1C9053E300F2B59A;
-					};
-					DB5DA79B1C9053E300F2B59A = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = DB5DA77C1C9053E300F2B59A;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -255,8 +151,6 @@
 			projectRoot = "";
 			targets = (
 				DB5DA77C1C9053E300F2B59A /* YSinaNavigationBarDemo */,
-				DB5DA7901C9053E300F2B59A /* YSinaNavigationBarDemoTests */,
-				DB5DA79B1C9053E300F2B59A /* YSinaNavigationBarDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,20 +168,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB5DA78F1C9053E300F2B59A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB5DA79A1C9053E300F2B59A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -302,36 +182,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB5DA78D1C9053E300F2B59A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB5DA7961C9053E300F2B59A /* YSinaNavigationBarDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB5DA7981C9053E300F2B59A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB5DA7A11C9053E300F2B59A /* YSinaNavigationBarDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DB5DA7931C9053E300F2B59A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DB5DA77C1C9053E300F2B59A /* YSinaNavigationBarDemo */;
-			targetProxy = DB5DA7921C9053E300F2B59A /* PBXContainerItemProxy */;
-		};
-		DB5DA79E1C9053E300F2B59A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DB5DA77C1C9053E300F2B59A /* YSinaNavigationBarDemo */;
-			targetProxy = DB5DA79D1C9053E300F2B59A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DB5DA7841C9053E300F2B59A /* Main.storyboard */ = {
@@ -443,6 +294,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -455,54 +307,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		DB5DA7A91C9053E300F2B59A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = YSinaNavigationBarDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSinaNavigationBarDemo.app/YSinaNavigationBarDemo";
-			};
-			name = Debug;
-		};
-		DB5DA7AA1C9053E300F2B59A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = YSinaNavigationBarDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSinaNavigationBarDemo.app/YSinaNavigationBarDemo";
-			};
-			name = Release;
-		};
-		DB5DA7AC1C9053E300F2B59A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = YSinaNavigationBarDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = YSinaNavigationBarDemo;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		DB5DA7AD1C9053E300F2B59A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = YSinaNavigationBarDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yue.YSinaNavigationBarDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = YSinaNavigationBarDemo;
-				USES_XCTRUNNER = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -523,24 +328,6 @@
 			buildConfigurations = (
 				DB5DA7A61C9053E300F2B59A /* Debug */,
 				DB5DA7A71C9053E300F2B59A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB5DA7A81C9053E300F2B59A /* Build configuration list for PBXNativeTarget "YSinaNavigationBarDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB5DA7A91C9053E300F2B59A /* Debug */,
-				DB5DA7AA1C9053E300F2B59A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB5DA7AB1C9053E300F2B59A /* Build configuration list for PBXNativeTarget "YSinaNavigationBarDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DB5DA7AC1C9053E300F2B59A /* Debug */,
-				DB5DA7AD1C9053E300F2B59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

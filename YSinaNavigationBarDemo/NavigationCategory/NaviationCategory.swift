@@ -32,21 +32,21 @@ extension UINavigationBar
      *  设置 背景色
      */
     @available(iOS 8.0,*)
-    func setViewColor(color:UIColor)
+    func setViewColor(_ color:UIColor)
     {
         //如果覆盖图层为nil
         if(self.coverView == nil)
         {
             //设置背景图片及度量
-            self.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+            self.setBackgroundImage(UIImage(), for: .default)
             //去除自定义背景图后形成的下端黑色横线
             self.shadowImage = UIImage()
             //设置图层的frame
-            let view = UIView(frame: CGRect(x: 0, y: -20, width: UIScreen.mainScreen().bounds.width, height: CGRectGetHeight(self.frame) + 20))
-            view.userInteractionEnabled = false//人机不交互
-            view.autoresizingMask = [.FlexibleWidth , .FlexibleHeight]//自适应宽度和高度
+            let view = UIView(frame: CGRect(x: 0, y: -20, width: UIScreen.main.bounds.width, height: self.frame.height + 20))
+            view.isUserInteractionEnabled = false//人机不交互
+            view.autoresizingMask = [.flexibleWidth , .flexibleHeight]//自适应宽度和高度
             //将图层添加到导航Bar的底层
-            self.insertSubview(view, atIndex: 0)
+            self.insertSubview(view, at: 0)
             
             //因为这里不是一个真正的属性，是在runtime时进行关联的属性，所以相关属性的修改需要实例对象来"赋值"
             self.coverView = view
@@ -61,7 +61,7 @@ extension UINavigationBar
      *  设置透明度
      */
     @available (iOS 8.0, *)
-    func setViewAlpha(alpha:CGFloat)
+    func setViewAlpha(_ alpha:CGFloat)
     {
         //如果view = self.coverView不成立，就return
         guard let view = self.coverView else
@@ -69,7 +69,7 @@ extension UINavigationBar
             return
         }
         
-        self.coverView!.backgroundColor = view.backgroundColor?.colorWithAlphaComponent(alpha)
+        self.coverView!.backgroundColor = view.backgroundColor?.withAlphaComponent(alpha)
     }
 
     
@@ -80,7 +80,7 @@ extension UINavigationBar
     @available (iOS 8.0, *)
     func relieveCover()
     {
-        self.setBackgroundImage(nil, forBarMetrics: .Default)
+        self.setBackgroundImage(nil, for: .default)
         coverView?.removeFromSuperview()
         coverView = nil
     }

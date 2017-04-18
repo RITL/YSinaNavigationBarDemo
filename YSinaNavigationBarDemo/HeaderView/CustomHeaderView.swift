@@ -18,7 +18,7 @@ protocol CustomHeaderViewDelegate : class
      :param: maxContentOffSet 最大偏移量
      */
     @available(iOS 8.0,*)
-    func customHeaderView(customHeaderView:CustomHeaderView,lockScrollView  maxContentOffSet:CGFloat)
+    func customHeaderView(_ customHeaderView:CustomHeaderView,lockScrollView  maxContentOffSet:CGFloat)
     
     
     
@@ -29,7 +29,7 @@ protocol CustomHeaderViewDelegate : class
      :param: alpha            透明度
      */
     @available(iOS 8.0,*)
-    func customHeaderView(customHeaderView:CustomHeaderView,shouldChangeBarAlpha alpha:CGFloat)
+    func customHeaderView(_ customHeaderView:CustomHeaderView,shouldChangeBarAlpha alpha:CGFloat)
 }
 
 
@@ -50,7 +50,7 @@ class CustomHeaderView: UIView {
     var maxContentOff:CGFloat
     
     /// 起点的纵坐标
-    private let originY:CGFloat = -64
+    fileprivate let originY:CGFloat = -64
     
 
     init(subView:UIView,maxContentOff:CGFloat,headerViewSize: CGSize,delegate: CustomHeaderViewDelegate)
@@ -59,10 +59,10 @@ class CustomHeaderView: UIView {
         self.delegate = delegate
         self.maxContentOff = maxContentOff > 0 ? -maxContentOff : maxContentOff//因为向下滑动是负数，进行数字正负转换
         
-        super.init(frame: CGRectMake(0, 0, headerViewSize.width, headerViewSize.height))
+        super.init(frame: CGRect(x: 0, y: 0, width: headerViewSize.width, height: headerViewSize.height))
         
         //开始自动布局设置，意思是自动将subView的frame与superView相一致
-        subView.autoresizingMask = [.FlexibleTopMargin,.FlexibleBottomMargin,.FlexibleLeftMargin,.FlexibleRightMargin,.FlexibleWidth,.FlexibleHeight]
+        subView.autoresizingMask = [.flexibleTopMargin,.flexibleBottomMargin,.flexibleLeftMargin,.flexibleRightMargin,.flexibleWidth,.flexibleHeight]
         
         //此视图不显示越界的视图
         self.clipsToBounds = false
@@ -82,7 +82,7 @@ class CustomHeaderView: UIView {
     
     
     // MARK: - 对外接口
-    func layoutHeaderWillScroll(offSet:CGPoint)
+    func layoutHeaderWillScroll(_ offSet:CGPoint)
     {
         //获取垂直偏移量
         let contentOffY = offSet.y
@@ -96,7 +96,7 @@ class CustomHeaderView: UIView {
         
         else if(contentOffY < 0)//如果小于0，表示headerView还显示在ScrollView中
         {
-            var rect = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)
+            var rect = CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
             
             rect.origin.y += contentOffY ;
             rect.size.height -= contentOffY;

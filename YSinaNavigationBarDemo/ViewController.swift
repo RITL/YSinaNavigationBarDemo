@@ -17,25 +17,25 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var imageHeight:CGFloat?
     var imageDistance:CGFloat?
     
-    let barColor = UIColor.orangeColor()
+    let barColor = UIColor.orange
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
 
         //设置导航栏的属性
-        self.navigationController?.navigationBar.setViewColor(barColor.colorWithAlphaComponent(0.0))
+        self.navigationController?.navigationBar.setViewColor(barColor.withAlphaComponent(0.0))
         
         //设置列表属性
         tableView = UITableView(frame: self.view.bounds)
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.dataSource = self
         self.view.addSubview(tableView)
         
         
         //设置显示图片的视图
-        imageView = UIImageView(frame: CGRectMake(0, 0, self.view.bounds.size.width, 100))
-        imageView.contentMode = .ScaleAspectFill
+        imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 100))
+        imageView.contentMode = .scaleAspectFill
         imageView.image = UIImage(named: "backGround.jpg")
         
         let customHeaderView = CustomHeaderView(subView: imageView, maxContentOff: -120, headerViewSize: CGSize(width: self.view.bounds.size.width,height: 100),delegate:self)
@@ -44,7 +44,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
         tableView.delegate = self;
@@ -52,7 +52,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
 
 
-    override func viewWillDisappear(animated: Bool)
+    override func viewWillDisappear(_ animated: Bool)
     {
         tableView.delegate = nil
         super.viewWillDisappear(animated)
@@ -68,7 +68,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
     //MARK: - UIScrollView Delegate
-    func scrollViewDidScroll(scrollView: UIScrollView){
+    func scrollViewDidScroll(_ scrollView: UIScrollView){
         
         //获得当前的自定义HeaderView对象
         let customView:CustomHeaderView = (scrollView as! UITableView).tableHeaderView as! CustomHeaderView
@@ -79,26 +79,26 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
 
     
-    @IBAction func nextBarTap(sender: AnyObject)
+    @IBAction func nextBarTap(_ sender: AnyObject)
     {
         let testController = UIViewController()
         testController.navigationItem.title = "Test"
-        testController.view.backgroundColor = UIColor.whiteColor()
+        testController.view.backgroundColor = UIColor.white
         self.navigationController?.pushViewController(testController, animated: true)
     }
     
     
     
     //MAKR: - UITableView DataScource
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 20;
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         cell.textLabel?.text = "Test" + String(indexPath.row)
         
@@ -107,23 +107,23 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     
     //MARK: -UITableView Delegate
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return 60
     }
     
     
     //MARK: - CustomHeaderViewDelegate
-    func customHeaderView(customHeaderView: CustomHeaderView, lockScrollView maxContentOffSet: CGFloat) {
+    func customHeaderView(_ customHeaderView: CustomHeaderView, lockScrollView maxContentOffSet: CGFloat) {
        
         //锁定滚动视图
         self.tableView.contentOffset.y = maxContentOffSet
     }
 
-    func customHeaderView(customHeaderView: CustomHeaderView, shouldChangeBarAlpha alpha:CGFloat) {
+    func customHeaderView(_ customHeaderView: CustomHeaderView, shouldChangeBarAlpha alpha:CGFloat) {
       
         //设置透明度
-        self.navigationController?.navigationBar.setViewColor(self.barColor.colorWithAlphaComponent(alpha))
+        self.navigationController?.navigationBar.setViewColor(self.barColor.withAlphaComponent(alpha))
     }
 }
 
